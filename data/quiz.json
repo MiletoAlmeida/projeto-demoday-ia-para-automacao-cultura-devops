@@ -1,0 +1,250 @@
+{
+  "iac": [
+    {
+      "pergunta": "O que significa a sigla IaC?",
+      "opcoes": ["Infraestrutura como Colaboração", "Internet como Código", "Infraestrutura como Código", "Instalação como Componente", "Integração como Cliente"],
+      "respostas": ["Infraestrutura como Código"],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Qual ferramenta da HashiCorp é o padrão de mercado para provisionamento de infraestrutura multicloud?",
+      "opcoes": ["Vagrant", "Consul", "Packer", "Terraform", "Vault"],
+      "respostas": ["Terraform"],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "No Terraform, qual comando é usado para visualizar o plano de execução sem aplicar nenhuma mudança?",
+      "opcoes": ["terraform apply", "terraform init", "terraform validate", "terraform plan", "terraform destroy"],
+      "respostas": ["terraform plan"],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "O que o VirtualBox faz?",
+      "opcoes": ["Gerencia contêineres Docker.", "Orquestra clusters Kubernetes.", "Permite a criação e execução de máquinas virtuais em um computador desktop.", "Provisiona infraestrutura diretamente na AWS.", "Analisa a qualidade do código IaC."],
+      "respostas": ["Permite a criação e execução de máquinas virtuais em um computador desktop."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Qual é a principal função do arquivo de \"state\" (estado) no Terraform?",
+      "opcoes": ["Armazenar as credenciais da nuvem de forma segura.", "Registrar os logs de execução de todos os comandos `apply`.", "Definir as variáveis de entrada para a configuração.", "Mapear os recursos da configuração para os recursos reais na nuvem, permitindo o rastreamento e gerenciamento do ciclo de vida.", "Declarar quais provedores (providers) serão usados na configuração."],
+      "respostas": ["Mapear os recursos da configuração para os recursos reais na nuvem, permitindo o rastreamento e gerenciamento do ciclo de vida."],
+      "nivel": "difícil"
+    },
+    {
+      "pergunta": "Quais das seguintes são características da Infraestrutura como Código? (Marque 2)",
+      "opcoes": ["Automação do provisionamento de recursos.", "Capacidade de versionar a infraestrutura em sistemas como o Git.", "Requer configuração manual em painéis web.", "É aplicável apenas para ambientes on-premises.", "Elimina a necessidade de monitoramento."],
+      "respostas": ["Automação do provisionamento de recursos.", "Capacidade de versionar a infraestrutura em sistemas como o Git."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Para que o Vagrant é comumente utilizado? (Marque 2)",
+      "opcoes": ["Para criar e gerenciar ambientes de desenvolvimento portáteis e reprodutíveis.", "Para implantar aplicações em produção em larga escala.", "Para automatizar a configuração de máquinas virtuais (como as do VirtualBox).", "Para substituir o Terraform no provisionamento de nuvem.", "Para orquestrar contêineres."],
+      "respostas": ["Para criar e gerenciar ambientes de desenvolvimento portáteis e reprodutíveis.", "Para automatizar a configuração de máquinas virtuais (como as do VirtualBox)."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Quais são dois benefícios diretos de usar IaC em um projeto na AWS? (Marque 2)",
+      "opcoes": ["A capacidade de replicar ambientes inteiros (desenvolvimento, homologação, produção) de forma rápida e consistente.", "Garante que a aplicação nunca terá bugs.", "Redução de erros humanos que ocorrem durante a configuração manual via console da AWS.", "Reduz o custo da fatura da AWS em 90%.", "Dispensa a necessidade de um engenheiro DevOps."],
+      "respostas": ["A capacidade de replicar ambientes inteiros (desenvolvimento, homologação, produção) de forma rápida e consistente.", "Redução de erros humanos que ocorrem durante a configuração manual via console da AWS."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Quais comandos do Terraform modificam o estado da infraestrutura real? (Marque 2)",
+      "opcoes": ["terraform plan", "terraform fmt", "terraform apply", "terraform validate", "terraform destroy"],
+      "respostas": ["terraform apply", "terraform destroy"],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Quais são duas práticas recomendadas para gerenciar o arquivo `terraform.tfstate` em equipes? (Marque 2)",
+      "opcoes": ["Armazenar o arquivo de estado no mesmo repositório Git que o código.", "Utilizar um backend remoto (como um bucket S3 ou Azure Blob Storage) para armazenar o arquivo de estado.", "Enviar o arquivo de estado por e-mail para os membros da equipe.", "Habilitar o \"state locking\" no backend para prevenir execuções concorrentes que possam corromper o estado.", "Excluir o arquivo de estado após cada `apply` para economizar espaço."],
+      "respostas": ["Utilizar um backend remoto (como um bucket S3 ou Azure Blob Storage) para armazenar o arquivo de estado.", "Habilitar o \"state locking\" no backend para prevenir execuções concorrentes que possam corromper o estado."],
+      "nivel": "difícil"
+    }
+  ],
+  "microservicos": [
+    {
+      "pergunta": "Qual é a principal característica de uma arquitetura de microsserviços?",
+      "opcoes": ["Uma única e grande base de código para toda a aplicação.", "A aplicação é estruturada como uma coleção de pequenos serviços independentes.", "Toda a lógica de negócio está no frontend.", "A comunicação entre serviços é sempre feita por compartilhamento de banco de dados.", "Requer o uso exclusivo da linguagem de programação Java."],
+      "respostas": ["A aplicação é estruturada como uma coleção de pequenos serviços independentes."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "O que é um contêiner no contexto de software?",
+      "opcoes": ["Uma máquina virtual pesada com seu próprio sistema operacional completo.", "Um servidor físico dedicado a uma única aplicação.", "Um pacote leve, portátil e executável que inclui tudo o que é necessário para rodar uma aplicação: código, bibliotecas e dependências.", "Um tipo especial de banco de dados.", "Um arquivo de configuração do Git."],
+      "respostas": ["Um pacote leve, portátil e executável que inclui tudo o que é necessário para rodar uma aplicação: código, bibliotecas e dependências."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Qual é a função de um `Dockerfile`?",
+      "opcoes": ["Executar um contêiner que já existe.", "Gerenciar múltiplos contêineres de uma vez (orquestração).", "Conter um conjunto de instruções em texto para que o Docker construa (build) uma imagem.", "Conectar um contêiner a uma rede externa.", "Monitorar a saúde de um microsserviço."],
+      "respostas": ["Conter um conjunto de instruções em texto para que o Docker construa (build) uma imagem."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Qual padrão de comunicação é mais comum entre microsserviços para solicitações síncronas?",
+      "opcoes": ["Filas de mensagens (Message Queues)", "APIs REST sobre HTTP/HTTPS", "Compartilhamento de arquivos em um SFTP", "Sockets TCP diretos", "Invocação de procedimentos remotos (RPC) legados"],
+      "respostas": ["APIs REST sobre HTTP/HTTPS"],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "O que é um \"API Gateway\" em uma arquitetura de microsserviços?",
+      "opcoes": ["Um banco de dados que armazena as URLs de todos os serviços.", "Uma ferramenta que converte monólitos em microsserviços automaticamente.", "Um servidor que atua como ponto de entrada único para todas as requisições dos clientes, roteando-as para os microsserviços apropriados.", "Uma biblioteca de frontend para facilitar o consumo de microsserviços.", "Um padrão de contêiner que garante a segurança."],
+      "respostas": ["Um servidor que atua como ponto de entrada único para todas as requisições dos clientes, roteando-as para os microsserviços apropriados."],
+      "nivel": "difícil"
+    },
+    {
+      "pergunta": "Quais são duas vantagens da arquitetura de microsserviços? (Marque 2)",
+      "opcoes": ["Implantação (deploy) independente de cada serviço.", "Complexidade operacional reduzida em comparação com monólitos.", "Permite que equipes diferentes usem tecnologias (linguagens, bancos de dados) diferentes para cada serviço.", "Garante que a comunicação entre serviços nunca falhe.", "Facilita o teste de toda a aplicação de uma só vez."],
+      "respostas": ["Implantação (deploy) independente de cada serviço.", "Permite que equipes diferentes usem tecnologias (linguagens, bancos de dados) diferentes para cada serviço."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Quais afirmações sobre Docker são verdadeiras? (Marque 2)",
+      "opcoes": ["Docker é uma ferramenta para gerenciar exclusivamente máquinas virtuais.", "Uma imagem Docker é um template imutável usado para criar contêineres.", "Um contêiner é uma instância em execução de uma imagem.", "Docker permite empacotar uma aplicação e suas dependências, garantindo que ela funcione da mesma forma em qualquer ambiente.", "`Dockerfile` e `docker-compose.yml` têm exatamente a mesma função."],
+      "respostas": ["Uma imagem Docker é um template imutável usado para criar contêineres.", "Docker permite empacotar uma aplicação e suas dependências, garantindo que ela funcione da mesma forma em qualquer ambiente."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Quais são dois desafios comuns em arquiteturas de microsserviços? (Marque 2)",
+      "opcoes": ["Complexidade no monitoramento e na observabilidade distribuída (logs, traces).", "Dificuldade em escalar serviços individualmente.", "Gerenciamento da consistência de dados entre diferentes bancos de dados de serviços.", "A aplicação inteira para de funcionar se um único serviço não essencial falhar.", "Impossibilidade de usar CI/CD."],
+      "respostas": ["Complexidade no monitoramento e na observabilidade distribuída (logs, traces).", "Gerenciamento da consistência de dados entre diferentes bancos de dados de serviços."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Quais comandos do Docker são usados para, respectivamente, construir uma imagem e executar um contêiner a partir dela? (Marque 2)",
+      "opcoes": ["docker start", "docker build", "docker push", "docker commit", "docker run"],
+      "respostas": ["docker build", "docker run"],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Quais são dois padrões para lidar com a resiliência em microsserviços? (Marque 2)",
+      "opcoes": ["Circuit Breaker (Disjuntor)", "Monolith First", "Retry (Tentativa com backoff exponencial)", "Shared Database (Banco de Dados Compartilhado)", "Hardcoding (IPs fixos no código)"],
+      "respostas": ["Circuit Breaker (Disjuntor)", "Retry (Tentativa com backoff exponencial)"],
+      "nivel": "difícil"
+    }
+  ],
+  "pipelines": [
+    {
+      "pergunta": "O que é Git?",
+      "opcoes": ["Uma plataforma para hospedar código na nuvem, como o GitHub.", "Uma linguagem de script para automação.", "Um sistema de controle de versão distribuído para rastrear mudanças no código-fonte.", "Uma ferramenta de integração contínua.", "Um editor de texto para programadores."],
+      "respostas": ["Um sistema de controle de versão distribuído para rastrear mudanças no código-fonte."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Na sigla CI/CD, o que \"CI\" representa?",
+      "opcoes": ["Continuous Delivery", "Continuous Integration (Integração Contínua)", "Code Inspection", "Customer Interface", "Cloud Implementation"],
+      "respostas": ["Continuous Integration (Integração Contínua)"],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Qual é o principal objetivo da Integração Contínua (CI)?",
+      "opcoes": ["Fazer o deploy da aplicação em produção a cada commit.", "Apenas armazenar o código de diferentes desenvolvedores.", "Automatizar a construção (build) e o teste do código cada vez que uma alteração é enviada para o repositório, a fim de detectar problemas rapidamente.", "Gerenciar a infraestrutura como código.", "Substituir a necessidade de testes unitários."],
+      "respostas": ["Automatizar a construção (build) e o teste do código cada vez que uma alteração é enviada para o repositório, a fim de detectar problemas rapidamente."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "No GitHub Actions, o que é um \"workflow\"?",
+      "opcoes": ["Um comentário em um Pull Request.", "Um processo automatizado definido em um arquivo YAML que é acionado por eventos no repositório (como push ou pull_request).", "O código-fonte da sua aplicação.", "Um contêiner Docker que executa os testes.", "O relatório final de cobertura de testes."],
+      "respostas": ["Um processo automatizado definido em um arquivo YAML que é acionado por eventos no repositório (como push ou pull_request)."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Qual a diferença fundamental entre Continuous Delivery e Continuous Deployment?",
+      "opcoes": ["Não há diferença, os termos são sinônimos.", "Continuous Delivery implanta em produção, enquanto Deployment implanta em homologação.", "Em Continuous Delivery, o passo final de deploy para produção requer aprovação manual, enquanto em Continuous Deployment, cada build que passa nos testes é implantado em produção automaticamente.", "Continuous Deployment usa Git, enquanto Continuous Delivery usa SVN.", "Continuous Delivery é para microsserviços, e Continuous Deployment é para monólitos."],
+      "respostas": ["Em Continuous Delivery, o passo final de deploy para produção requer aprovação manual, enquanto em Continuous Deployment, cada build que passa nos testes é implantado em produção automaticamente."],
+      "nivel": "difícil"
+    },
+    {
+      "pergunta": "Quais comandos do Git são essenciais para enviar suas alterações locais para um repositório remoto (como o GitHub)? (Marque 2)",
+      "opcoes": ["git clone", "git commit", "git pull", "git status", "git push"],
+      "respostas": ["git commit", "git push"],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Quais são dois benefícios de um pipeline de CI/CD? (Marque 2)",
+      "opcoes": ["Redução do tempo e do esforço manual para fazer deploy de novas versões.", "Elimina 100% dos bugs em produção.", "Acelera o ciclo de feedback para os desenvolvedores, permitindo que corrijam erros mais cedo.", "Torna o controle de versão desnecessário.", "Aumenta o custo da infraestrutura."],
+      "respostas": ["Redução do tempo e do esforço manual para fazer deploy de novas versões.", "Acelera o ciclo de feedback para os desenvolvedores, permitindo que corrijam erros mais cedo."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Em um arquivo de workflow do GitHub Actions, quais são duas palavras-chave de alto nível que você usaria? (Marque 2)",
+      "opcoes": ["jobs (para definir os trabalhos a serem executados)", "function", "on (para definir o evento que aciona o workflow)", "variable", "docker-run"],
+      "respostas": ["jobs (para definir os trabalhos a serem executados)", "on (para definir o evento que aciona o workflow)"],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Quais etapas são tipicamente encontradas em um pipeline de CI? (Marque 2)",
+      "opcoes": ["Execução de testes unitários e de integração.", "Criação manual do ticket de implantação.", "Análise estática de código (linting) para verificar a qualidade e o estilo.", "Aprovação do gerente de produto.", "Provisionamento da infraestrutura de produção."],
+      "respostas": ["Execução de testes unitários e de integração.", "Análise estática de código (linting) para verificar a qualidade e o estilo."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "No Git, para que servem os comandos `git merge` e `git rebase`? (Marque 2)",
+      "opcoes": ["Ambos são usados para integrar mudanças de uma branch em outra.", "git merge deleta o histórico de commits para economizar espaço.", "git rebase é a única forma de resolver conflitos.", "git merge cria um \"commit de merge\" para unir as histórias, preservando os dois ramos, enquanto git rebase reescreve a história da branch atual como se ela tivesse começado a partir da ponta da outra branch.", "Ambos os comandos enviam o código diretamente para produção."],
+      "respostas": ["Ambos são usados para integrar mudanças de uma branch em outra.", "git merge cria um \"commit de merge\" para unir as histórias, preservando os dois ramos, enquanto git rebase reescreve a história da branch atual como se ela tivesse começado a partir da ponta da outra branch."],
+      "nivel": "difícil"
+    }
+  ],
+  "kubernetes": [
+    {
+      "pergunta": "O que é o Kubernetes em sua essência?",
+      "opcoes": ["Uma ferramenta para construir imagens de contêiner.", "Um sistema de controle de versão para infraestrutura.", "Uma plataforma de orquestração de contêineres de código aberto para automatizar a implantação, o dimensionamento e o gerenciamento de aplicações.", "Um provedor de nuvem como AWS ou Google Cloud.", "Um banco de dados distribuído."],
+      "respostas": ["Uma plataforma de orquestração de contêineres de código aberto para automatizar a implantação, o dimensionamento e o gerenciamento de aplicações."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "No Kubernetes, qual é o menor objeto computacional que pode ser criado e gerenciado?",
+      "opcoes": ["Nó (Node)", "Serviço (Service)", "Pod", "Imagem (Image)", "Deployment"],
+      "respostas": ["Pod"],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Qual objeto do Kubernetes é usado para expor uma aplicação em execução em um conjunto de Pods como um serviço de rede?",
+      "opcoes": ["Ingress", "Service", "ConfigMap", "Pod", "StatefulSet"],
+      "respostas": ["Service"],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "O que faz o Horizontal Pod Autoscaler (HPA) no Kubernetes?",
+      "opcoes": ["Aumenta a quantidade de memória RAM de um Pod existente.", "Aumenta ou diminui automaticamente o número de réplicas de Pods em um Deployment com base no uso de CPU ou outra métrica.", "Adiciona mais nós (Nodes) ao cluster.", "Faz o deploy de uma nova versão da aplicação.", "Garante que cada Pod tenha um endereço de IP fixo."],
+      "respostas": ["Aumenta ou diminui automaticamente o número de réplicas de Pods em um Deployment com base no uso de CPU ou outra métrica."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Qual é a função do `etcd` em um cluster Kubernetes?",
+      "opcoes": ["É o runtime do contêiner que executa as imagens (como o containerd).", "É o agente que roda em cada nó e garante que os contêineres estejam rodando em um Pod.", "É um banco de dados chave-valor distribuído e consistente que armazena todos os dados do cluster, servindo como a \"fonte da verdade\" para o estado do cluster.", "É o componente que observa novos Pods sem nó atribuído e os designa para um nó.", "É o proxy de rede que roda em cada nó."],
+      "respostas": ["É um banco de dados chave-valor distribuído e consistente que armazena todos os dados do cluster, servindo como a \"fonte da verdade\" para o estado do cluster."],
+      "nivel": "difícil"
+    },
+    {
+      "pergunta": "Quais são dois componentes principais de um nó (Node) do Kubernetes? (Marque 2)",
+      "opcoes": ["API Server", "Kubelet", "Container Runtime (ex: containerd, CRI-O)", "etcd", "Scheduler"],
+      "respostas": ["Kubelet", "Container Runtime (ex: containerd, CRI-O)"],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Quais são duas maneiras de o Kubernetes promover a resiliência de uma aplicação? (Marque 2)",
+      "opcoes": ["Reiniciando automaticamente contêineres que falham (auto-healing).", "Reescrevendo o código da aplicação para remover bugs.", "Distribuindo as réplicas da aplicação entre diferentes nós para evitar um ponto único de falha.", "Impedindo que os usuários acessem a aplicação durante horários de pico.", "Fazendo backup automático do banco de dados da aplicação."],
+      "respostas": ["Reiniciando automaticamente contêineres que falham (auto-healing).", "Distribuindo as réplicas da aplicação entre diferentes nós para evitar um ponto único de falha."],
+      "nivel": "fácil"
+    },
+    {
+      "pergunta": "Qual a função de um `Deployment` e de um `ReplicaSet` no Kubernetes? (Marque 2)",
+      "opcoes": ["Um `Deployment` permite gerenciar o ciclo de vida de uma aplicação, incluindo atualizações (rollouts) e reversões (rollbacks) de forma declarativa.", "Um `ReplicaSet` é usado para expor a aplicação para o tráfego externo.", "A função principal de um `ReplicaSet` é garantir que um número especificado de réplicas de Pods esteja sempre em execução.", "Um `Deployment` armazena dados persistentes para a aplicação.", "Um `ReplicaSet` define as regras de acesso à rede para os Pods."],
+      "respostas": ["Um `Deployment` permite gerenciar o ciclo de vida de uma aplicação, incluindo atualizações (rollouts) e reversões (rollbacks) de forma declarativa.", "A função principal de um `ReplicaSet` é garantir que um número especificado de réplicas de Pods esteja sempre em execução."],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "Quais objetos são comumente usados para injetar configuração em Pods sem modificar a imagem do contêiner? (Marque 2)",
+      "opcoes": ["ConfigMaps (para dados de configuração não sensíveis)", "PersistentVolumes", "Secrets (para dados sensíveis como senhas e tokens)", "Namespaces", "Services"],
+      "respostas": ["ConfigMaps (para dados de configuração não sensíveis)", "Secrets (para dados sensíveis como senhas e tokens)"],
+      "nivel": "médio"
+    },
+    {
+      "pergunta": "O que são \"liveness probes\" e \"readiness probes\"? (Marque 2)",
+      "opcoes": ["Ambos servem para verificar se o nó (Node) está saudável.", "Uma \"liveness probe\" é usada pelo Kubelet para saber quando reiniciar um contêiner (ex: se a aplicação travou).", "Uma \"readiness probe\" deleta o Pod se ele não responder.", "Uma \"readiness probe\" é usada para saber quando um contêiner está pronto para começar a aceitar tráfego (ex: para um Service não enviar requisições antes da hora).", "Ambos são configurados fora do cluster, em uma ferramenta de monitoramento externa."],
+      "respostas": ["Uma \"liveness probe\" é usada pelo Kubelet para saber quando reiniciar um contêiner (ex: se a aplicação travou).", "Uma \"readiness probe\" é usada para saber quando um contêiner está pronto para começar a aceitar tráfego (ex: para um Service não enviar requisições antes da hora)."],
+      "nivel": "difícil"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Quiz - O Poder da IA</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <header class="header">
+        <div class="container">
+            <h1 class="header-title">DevOps <span class="header-subtitle">Quiz</span></h1>
+            <div id="score-display" class="score-display">Pontos: 0</div>
+        </div>
+    </header>
+
+    <main class="container flex-grow">
+        <div id="selection-screen" class="fade-in">
+            <div class="quiz-card">
+                <div class="quiz-header">
+                    <h2 class="quiz-title">O Poder da IA na Cultura DevOps</h2>
+                </div>
+                <div class="quiz-content">
+                    <p class="selection-prompt">Selecione um tema para iniciar o quiz:</p>
+                    <div id="theme-selection-container" class="theme-container">
+                        <button class="btn theme-btn" data-theme="iac">Infraestrutura como Código (IaC)</button>
+                        <button class="btn theme-btn" data-theme="microservicos">Arquitetura de Microsserviços</button>
+                        <button class="btn theme-btn" data-theme="pipelines">Adoção de Pipelines (CI/CD)</button>
+                        <button class="btn theme-btn" data-theme="kubernetes">Escalabilidade com Kubernetes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="quiz-wrapper" class="hidden">
+            <div class="quiz-card">
+                <div class="quiz-header">
+                    <h2 id="quiz-theme-title" class="quiz-title">Carregando...</h2>
+                    <div class="progress-bar-container">
+                        <div id="progress-bar" class="progress-bar"></div>
+                    </div>
+                    <div class="quiz-info">
+                        <span id="question-counter">Pergunta 1 de 10</span>
+                        <span id="timer">00:30</span>
+                    </div>
+                </div>
+
+                <div class="quiz-content">
+                    <div id="question-container">
+                        <h3 id="question-text" class="question-text">Carregando pergunta...</h3>
+                        <p id="question-hint" class="question-hint">(Marque as opções corretas)</p>
+                        <div id="options-container" class="options-container">
+                            </div>
+                    </div>
+                    <div id="feedback-container"></div>
+                </div>
+
+                <div class="quiz-footer">
+                    <button id="submit-btn" class="btn btn-primary">Verificar</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="results-screen" class="hidden">
+            <div class="quiz-card">
+                <div class="quiz-content">
+                    <div id="result-container" class="fade-in">
+                         <div class="result-icon-wrapper">
+                            <span id="final-score" class="final-score">0/10</span>
+                        </div>
+                        <h3 id="result-title" class="result-title">Quiz Completo!</h3>
+                        <p id="result-message" class="result-message">Veja como você se saiu.</p>
+                        <button id="restart-btn" class="btn btn-primary">Tentar Novamente</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>© 2025 DevOps Quiz - Criado com a ajuda de uma IA</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
